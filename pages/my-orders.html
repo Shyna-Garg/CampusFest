@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Orders - CampusFest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="bg-gray-50">
+
+  <!-- 🔙 Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="../assets/images/CampusFest Logo Design.png" alt="Logo" class="h-12 w-auto" />
+        <h1 class="text-xl font-bold text-gray-800">CampusFest</h1>
+      </div>
+      <a href="./index.html" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">← Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- 📦 My Orders Section -->
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold mb-6 text-gray-800">My Orders</h2>
+
+    <!-- 🔁 Order Card (Repeat this div for each order) -->
+    <div class="bg-white rounded-xl shadow-md p-6 mb-6 flex flex-col md:flex-row gap-6 items-start md:items-center">
+      
+      <!-- 🖼️ Product/Event Image -->
+      <div class="w-full md:w-40 h-40 overflow-hidden rounded-lg border">
+        <img src="../assets/images/sample-product.jpg" alt="Product" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- 📝 Order Info -->
+      <div class="flex-1 space-y-2">
+        <h3 class="text-xl font-semibold text-gray-900" id="order-title">CampusFest T-shirt</h3>
+        <p class="text-sm text-gray-600" id="order-date">📅 Ordered on: 30 July 2025</p>
+        <p class="text-sm text-gray-600" id="order-qty">🔢 Quantity: 2 | 👕 Size: M</p>
+        <p class="text-sm text-gray-700 font-medium" id="order-price">💰 ₹998</p>
+      </div>
+
+      <!-- 📌 Status -->
+      <div class="self-end md:self-center">
+        <span id="order-status" class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-semibold">Delivered</span>
+      </div>
+    </div>
+
+    <!-- You can duplicate the order card above to show multiple orders -->
+
+  </section>
+</body>
+</html>

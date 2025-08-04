@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - CampusFest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img src="../assets/images/CampusFest Logo Design.png" class="h-16 w-auto" alt="CampusFest"/>
+      </div>
+
+      <!-- Back Button -->
+      <div>
+        <a href="./cart.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200 text-sm">
+          ← Back to cart
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Checkout Container -->
+  <div class="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-10 items-start">
+
+    <!-- 🧾 Order Summary -->
+    <div id="order-summary" class="bg-white p-6 rounded-xl shadow-lg space-y-4">
+      <h2 class="text-2xl font-semibold text-gray-800">🧾 Order Summary</h2>
+
+      <div class="flex gap-4 items-center border-b pb-4">
+        <img src="../assets/images/sample-tshirt.jpg" alt="Product" class="h-20 w-20 object-cover rounded-lg" id="checkout-product-image">
+        <div>
+          <p id="checkout-product-title" class="font-medium">Product Name</p>
+          <p class="text-sm text-gray-600">Size: <span id="checkout-product-size">M</span></p>
+          <p class="text-sm text-gray-600">Qty: <span id="checkout-product-qty">1</span></p>
+          <p class="font-semibold text-green-600">₹<span id="checkout-product-price">499</span></p>
+        </div>
+      </div>
+
+      <div class="flex justify-between font-semibold text-lg pt-4 border-t">
+        <p>Total</p>
+        <p>₹<span id="checkout-total">499</span></p>
+      </div>
+    </div>
+
+    <!-- 💳 Billing & Payment Form -->
+    <div id="billing-form" class="bg-white p-6 rounded-xl shadow-lg space-y-5">
+      <h2 class="text-2xl font-semibold text-gray-800">💳 Billing Details</h2>
+
+      <form id="checkout-form" class="space-y-4">
+
+        <input id="billing-name" type="text" placeholder="Full Name" class="w-full p-2 border rounded-md" required />
+        <input id="billing-email" type="email" placeholder="Email Address" class="w-full p-2 border rounded-md" required />
+        <input id="billing-phone" type="tel" placeholder="Phone Number" class="w-full p-2 border rounded-md" required />
+        <input id="billing-address" type="text" placeholder="Delivery Address" class="w-full p-2 border rounded-md" required />
+        <div class="flex gap-4">
+          <input id="billing-city" type="text" placeholder="City" class="w-full p-2 border rounded-md" required />
+          <input id="billing-pincode" type="text" placeholder="Pincode" class="w-full p-2 border rounded-md" required />
+        </div>
+        <textarea id="billing-notes" rows="3" placeholder="Any special delivery notes?" class="w-full p-2 border rounded-md"></textarea>
+
+        <!-- Payment Method -->
+        <div class="space-y-2">
+          <p class="font-medium text-gray-700">Select Payment Method:</p>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="payment-method" value="cod" class="text-blue-500" checked>
+            Cash on Delivery (COD)
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="payment-method" value="upi" class="text-blue-500">
+            UPI / Wallet
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="payment-method" value="card" class="text-blue-500">
+            Credit/Debit Card
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <a href="./my-orders.html"><button id="confirm-order" type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">
+          Confirm Order
+        </button></a>
+
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>

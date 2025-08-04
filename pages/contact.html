@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - CampusFest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+   <nav class="bg-white shadow-sm sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="../assets/images/CampusFest Logo Design.png" alt="CampusFest" class="h-12 w-auto" />
+        <h1 class="font-bold text-xl text-blue-600">CampusFest</h1>
+      </div>
+      <div class="space-x-6 text-sm">
+        <a href="./index.html" class="hover:text-blue-500">Home</a>
+        <a href="./merchandise.html" class="hover:text-blue-500">Merchandise</a>
+        <a href="./events.html" class="hover:text-blue-500">Events</a>
+        <a href="./events.html" class="hover:text-blue-500">Events</a>
+        <a href="./contact.html" class="text-blue-500">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🌟 Header -->
+  <section class="text-center py-12 bg-blue-100 shadow">
+    <h1 class="text-4xl font-bold mb-2">Contact Us</h1>
+    <p class="text-gray-600">Got questions? Reach out to the CampusFest team!</p>
+  </section>
+
+  <!-- 📞 Contact Section -->
+  <div class="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-12">
+
+    <!-- 📝 Contact Form -->
+    <div>
+      <form id="contact-form" class="bg-white p-6 rounded-xl shadow space-y-4">
+        <h2 class="text-2xl font-semibold mb-4">Send us a message</h2>
+
+        <input id="user-name" type="text" placeholder="Full Name" class="w-full p-3 border rounded-md" required />
+        <input id="user-email" type="email" placeholder="Email Address" class="w-full p-3 border rounded-md" required />
+        <input id="user-phone" type="tel" placeholder="Phone Number" class="w-full p-3 border rounded-md" />
+        <input id="user-subject" type="text" placeholder="Subject (optional)" class="w-full p-3 border rounded-md" />
+        <textarea id="user-message" rows="5" placeholder="Your Message..." class="w-full p-3 border rounded-md resize-none" required></textarea>
+
+        <button id="contact-submit" type="submit" class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- 📍 Contact Info -->
+    <div id="contact-info" class="bg-white p-6 rounded-xl shadow space-y-6">
+      <h2 class="text-2xl font-semibold mb-4">CampusFest Team</h2>
+      <p><i class="fas fa-envelope text-blue-500 mr-2"></i> campusfest@email.com</p>
+      <p><i class="fas fa-phone-alt text-blue-500 mr-2"></i> +91 9876543210</p>
+      <p><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> XYZ College, Chandigarh</p>
+
+      <!-- 🔗 Social Links -->
+      <div id="social-links" class="flex gap-4 mt-6 text-xl">
+        <a href="#" class="hover:text-blue-500"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-blue-500"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

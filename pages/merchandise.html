@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusFest | Merchandise</title>
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-100 shadow-md">
+      <div class="max-w-screen-xl mx-auto px-6 py-3 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img
+            src="../assets/images/CampusFest Logo Design.png"
+            class="h-14 w-auto"
+            alt="CampusFest"
+          />
+        </div>
+
+        <!-- Links -->
+        <div class="flex items-center gap-8 text-sm font-medium">
+          <a href="./index.html" class="text-gray-900 hover:text-blue-500 transition">Home</a>
+          <a href="./events.html" class="text-gray-900 hover:text-blue-500 transition">Events</a>
+          <a href="./merchandise.html" class="text-blue-600 font-semibold">Merchandise</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-100 py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-gray-800">Campus Merchandise Store</h2>
+        <p class="text-lg sm:text-xl mb-6 max-w-2xl mx-auto text-gray-700">
+          Grab exclusive merch — T-shirts, hoodies, mugs & more. Show your fest spirit in style!
+        </p>
+        <a href="#products" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition">
+          Shop Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-14 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h3 class="text-2xl sm:text-3xl font-bold mb-10 text-gray-800">What’s in Store?</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-lg mb-2 text-blue-700">T-Shirts</h4>
+            <p class="text-gray-600">Comfortable, cool, and fest-themed!</p>
+          </div>
+          <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-lg mb-2 text-blue-700">Hoodies</h4>
+            <p class="text-gray-600">Cozy up with limited-edition hoodies.</p>
+          </div>
+          <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-lg mb-2 text-blue-700">Mugs</h4>
+            <p class="text-gray-600">Perfect for coffee lovers and late-night coders.</p>
+          </div>
+          <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-lg mb-2 text-blue-700">Posters</h4>
+            <p class="text-gray-600">Decorate your room with fest memories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- 🛍️ Product Listings --> 
+<section id="products" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h3 class="text-2xl font-bold text-center mb-10">Available Products</h3>
+    
+    <div class="scrollbar-hide flex overflow-x-auto space-x-6 pb-4">
+      
+      <!-- Product Card 1 -->
+      <div class="product-card min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden" 
+           data-name="CampusFest T-Shirt" data-price="299" data-image="../assets/images/t-shirt.jpg">
+        <img src="../assets/images/t-shirt.jpg" alt="T-Shirt" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold mb-1">CampusFest T-Shirt</h4>
+          <p class="text-sm text-gray-600 mb-2">Rs. 299</p>
+          <button class="buy-now-btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden" 
+           data-name="CampusFest Hoodie" data-price="599" data-image="../assets/images/hoodie.jpg">
+        <img src="../assets/images/hoodie.jpg" alt="Hoodie" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold mb-1">CampusFest Hoodie</h4>
+          <p class="text-sm text-gray-600 mb-2">Rs. 599</p>
+          <button class="buy-now-btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden" 
+           data-name="CampusFest Mug" data-price="199" data-image="../assets/images/mug.jpg">
+        <img src="../assets/images/mug.jpg" alt="Mug" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold mb-1">CampusFest Mug</h4>
+          <p class="text-sm text-gray-600 mb-2">Rs. 199</p>
+          <button class="buy-now-btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden" 
+           data-name="Fest Poster" data-price="99" data-image="../assets/images/poster.jpg">
+        <img src="../assets/images/poster.jpg" alt="Poster" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold mb-1">Fest Poster</h4>
+          <p class="text-sm text-gray-600 mb-2">Rs. 99</p>
+          <button class="buy-now-btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="product-card min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden" 
+           data-name="CampusFest Cap" data-price="149" data-image="../assets/images/cap.jpg">
+        <img src="../assets/images/cap.jpg" alt="Cap" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold mb-1">CampusFest Cap</h4>
+          <p class="text-sm text-gray-600 mb-2">Rs. 149</p>
+          <button class="buy-now-btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="product-card min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden" 
+           data-name="Fest Notebook" data-price="89" data-image="../assets/images/notebook.jpg">
+        <img src="../assets/images/notebook.jpg" alt="Notebook" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-lg font-semibold mb-1">Fest Notebook</h4>
+          <p class="text-sm text-gray-600 mb-2">Rs. 89</p>
+          <button class="buy-now-btn bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Buy Now</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonial Section -->
+<section class="py-16 bg-gray-50" id="testimonials">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8 bg-gradient-to-r from-indigo-500 to-purple-600 text-transparent bg-clip-text">
+      What Students Say
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <p class="text-gray-600 italic mb-4">“This platform made our event reach 2x more students. Easy to manage and fast.”</p>
+        <div class="flex items-center justify-center gap-4">
+          <img src="https://i.pravatar.cc/50?img=11" class="w-12 h-12 rounded-full" alt="">
+          <div>
+            <p class="font-semibold">Siddo</p>
+            <p class="text-sm text-gray-500">President, EPC Club</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <p class="text-gray-600 italic mb-4">“Loved the merch store! Affordable and really cool designs.”</p>
+        <div class="flex items-center justify-center gap-4">
+          <img src="https://i.pravatar.cc/50?img=21" class="w-12 h-12 rounded-full" alt="">
+          <div>
+            <p class="font-semibold">Kunal Mehra</p>
+            <p class="text-sm text-gray-500">2nd Year, CSE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+        <p class="text-gray-600 italic mb-4">“Very smooth ticket booking and user-friendly UI. Totally recommend!”</p>
+        <div class="flex items-center justify-center gap-4">
+          <img src="https://i.pravatar.cc/50?img=32" class="w-12 h-12 rounded-full" alt="">
+          <div>
+            <p class="font-semibold">Simran Kaur</p>
+            <p class="text-sm text-gray-500">BCA Final Year</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section class="py-16 bg-white" id="faqs">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10 bg-gradient-to-r from-blue-500 to-indigo-600 text-transparent bg-clip-text">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-6">
+      <div class="p-5 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-indigo-600 mb-2 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+          </svg>
+          How do I buy a ticket?
+        </h3>
+        <p class="text-gray-600">Go to the Events page, select your event, and click "Book Now". Enter your details and confirm.</p>
+      </div>
+
+      <div class="p-5 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-indigo-600 mb-2 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20h9"/>
+          </svg>
+          Can I return the merchandise?
+        </h3>
+        <p class="text-gray-600">Returns are accepted only within 7 days if the product is damaged or defective.</p>
+      </div>
+
+      <div class="p-5 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold text-indigo-600 mb-2 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v4a1 1 0 001 1h3m10 0h3a1 1 0 001-1V7m-6 10v-6"/>
+          </svg>
+          Do I need to sign up to view events?
+        </h3>
+        <p class="text-gray-600">No, viewing is open to all. But to book or sell, you need to log in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Call to Action -->
+    <section class="bg-blue-500 text-white py-10 text-center mt-10">
+      <h4 class="text-2xl font-bold mb-2">Don’t Miss Out!</h4>
+      <p class="text-sm mb-4">Limited stock. Grab your favorite merch before it’s gone!</p>
+      <a href="#products" class="inline-block bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">
+        Explore All Products
+      </a>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-28 py-10">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
+        <!-- Logo & About -->
+        <div>
+          <h2 class="text-white text-xl font-bold mb-3">CampusFest</h2>
+          <p class="text-sm">
+            Your one-stop hub for college events & exclusive merch. Stay updated
+            and join the celebration!
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-2">Quick Links</h3>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="./events.html" class="hover:text-white">Events</a></li>
+            <li>
+              <a href="./merchandise.html" class="hover:text-white"
+                >Merchandise</a
+              >
+            </li>
+            <li><a href="./about.html" class="hover:text-white">About</a></li>
+            <li><a href="./contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="./login.html" class="hover:text-white">Login</a></li>
+          </ul>
+        </div>
+
+        <!-- Useful for Students -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-2">For Students</h3>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:text-white">Upload Event</a></li>
+            <li><a href="#" class="hover:text-white">View Orders</a></li>
+            <li><a href="#" class="hover:text-white">Club Login</a></li>
+            <li><a href="#" class="hover:text-white">Help & Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Policies -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Policies</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Follow Us</h3>
+          <div class="flex space-x-4 text-lg">
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4"
+      >
+        &copy; 2025 CampusFest. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../js/merch.js"></script>
+
+  </body>
+</html>

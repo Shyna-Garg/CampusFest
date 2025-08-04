@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - CampusFest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- 🔷 Navbar -->
+  <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+    <img src="../assets/images/CampusFest Logo Design.png" class="h-14" alt="CampusFest Logo" />
+    <a href="./merchandise.html" class="text-blue-600 hover:underline text-sm">← Continue Shopping</a>
+  </nav>
+
+  <!-- 🛒 Cart Container -->
+  <div id="cart-page" class="max-w-6xl mx-auto p-6 grid md:grid-cols-3 gap-8">
+
+    <!-- 🧾 Cart Items List -->
+    <div id="cart-items" class="md:col-span-2 space-y-6">
+
+      <!-- 🔁 Cart Item -->
+      <div class="flex flex-col md:flex-row items-center gap-6 bg-white shadow-md rounded-lg p-4">
+        <img src="../assets/images/sample-product.jpg" alt="Product Image" class="h-28 w-28 object-cover rounded-md" />
+        <div class="flex-1 w-full space-y-1">
+          <h3 class="text-lg font-semibold text-gray-800">Product Name</h3>
+          <p class="text-sm text-gray-500">Size: M</p>
+          <div class="flex items-center gap-3 mt-2">
+            <label for="qty" class="text-sm">Qty:</label>
+            <input type="number" min="1" value="1" class="w-16 px-2 py-1 border rounded" />
+            <p class="ml-auto font-semibold text-green-600">₹499</p>
+          </div>
+        </div>
+        <button class="text-red-700 bg-red-300 rounded p-1 hover:bg-red-600 hover:text-white text-sm">Remove</button>
+      </div>
+
+      <!-- You can duplicate above div for multiple cart items -->
+
+    </div>
+
+    <!-- 💳 Cart Summary -->
+    <div id="cart-summary" class="bg-white p-6 shadow-md rounded-lg space-y-4 h-fit">
+      <h2 class="text-xl font-semibold text-gray-800">Cart Summary</h2>
+      <div class="flex justify-between text-sm text-gray-600">
+        <span>Subtotal:</span>
+        <span>₹499</span>
+      </div>
+      <div class="flex justify-between text-sm text-gray-600">
+        <span>Delivery:</span>
+        <span>₹0</span>
+      </div>
+      <hr />
+      <div class="flex justify-between font-semibold text-lg text-gray-800">
+        <span>Total:</span>
+        <span>₹499</span>
+      </div>
+      <a href="./checkout.html"><button class="w-full bg-blue-600 hover:bg-blue-700 text-white mt-4 py-2 rounded-md font-semibold">
+        Proceed to Checkout
+      </button></a>
+    </div>
+  </div>
+
+</body>
+</html>

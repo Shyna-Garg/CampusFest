@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="bg-gray-50">
+
+  <!-- 🔙 Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img src="../assets/images/CampusFest Logo Design.png" class="h-16 w-auto" alt="CampusFest"/>
+      </div>
+
+      <!-- Back Button -->
+      <div>
+        <a href="./merchandise.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200 text-sm">
+          ← Back to Merch
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🛍️ Product Detail Section -->
+  <div id="product-details-page" class="max-w-7xl mx-auto p-6 grid md:grid-cols-2 gap-12 items-start mt-6">
+
+    <!-- 🖼️ Product Image -->
+    <div id="product-image-section" class="bg-white rounded-xl p-4 shadow-lg">
+      <img id="product-image" src="../assets/images/sample-tshirt.jpg" alt="Product Image" class="w-full h-96 object-cover rounded-xl"/>
+    </div>
+
+    <!-- 📋 Product Info Section -->
+    <div id="product-info-section" class="space-y-5 bg-white rounded-xl p-6 shadow-lg">
+
+      <h2 id="product-title" class="text-3xl font-bold text-gray-900">Product Name</h2>
+
+<p id="product-price" class="text-2xl font-semibold text-green-600">
+  Total Price: <span id="total-price" class="font-semibold">₹300</span>
+</p>
+
+<p id="product-description" class="text-gray-700 text-sm leading-relaxed">
+  Here goes the detailed product description...
+</p>
+
+<!-- Size Selection -->
+<div id="product-sizes" class="space-y-1">
+  <label class="block text-sm font-medium text-gray-700">Select Size:</label>
+  <div class="flex gap-2">
+    <button class="size-btn px-3 py-1 border rounded hover:bg-gray-200">S</button>
+    <button class="size-btn px-3 py-1 border rounded hover:bg-gray-200">M</button>
+    <button class="size-btn px-3 py-1 border rounded hover:bg-gray-200">L</button>
+    <button class="size-btn px-3 py-1 border rounded hover:bg-gray-200">XL</button>
+  </div>
+</div>
+
+<!-- Quantity -->
+<div id="product-quantity" class="space-y-1 mt-4">
+  <button id="decrease-btn" class="px-3 py-1 bg-gray-200">−</button>
+  <span id="quantity" class="text-lg font-medium">1</span>
+  <button id="increase-btn" class="px-3 py-1 bg-gray-200">+</button>
+</div>
+
+
+      <!-- Add to Cart -->
+      <button id="add-to-cart-btn" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-md w-full">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+  <script src="../js/merch-product.js" defer></script>
+
+</body>
+</html>

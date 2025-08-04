@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ticket Confirmation | CampusFest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+ <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
+
+  <div id="ticket-confirmation" class="bg-white max-w-xl w-full p-8 rounded-xl shadow-xl text-center space-y-6">
+    
+    <!-- 🎉 Success Message -->
+    <div class="text-green-600 text-3xl font-bold">Registration Successful!</div>
+    <p class="text-gray-700 text-sm">Thank you for registering. Here are your event details:</p>
+
+    <!-- 🙍 User Info -->
+    <div id="user-ticket-details" class="text-md text-gray-700 text-left space-y-2">
+
+    </div>
+
+    <!-- 🎫 Event Summary -->
+    <div id="event-ticket-details" class="bg-gray-50 p-4 rounded-lg text-left space-y-2">
+    
+    </div>
+
+    <!-- 📷 QR Code Placeholder -->
+    <!-- <div id="qrcode" class="w-32 h-32 bg-gray-200 rounded-lg mx-auto flex items-center justify-center text-gray-500 text-sm">
+      
+    </div> -->
+
+
+    <!-- 🔘 Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+      <a href="./events.html" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md w-full sm:w-auto">
+        ← Back to Events
+      </a>
+      <button id="downloadBtn" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md w-full sm:w-auto">
+        ⬇️ Download Ticket
+      </button>
+    </div>
+
+  </div>
+
+  <script src="../js/ticket-confirmation.js"></script>
+</body>
+</html>

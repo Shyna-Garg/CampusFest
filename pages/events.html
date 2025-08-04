@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+     <nav class="bg-gray-100 text-white shadow-md">
+      <div class="max-w-screen flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center px-6 gap-3">
+          <img
+            src="../assets/images/CampusFest Logo Design.png"
+            class="h-20 w-auto"
+            alt="CampusFest"
+          />
+        </div>
+
+        <!-- Links -->
+        <div class="flex glex-wrap items-center gap-10 mr-10">
+          <a
+            href="./index.html"
+            class="text-gray-900 font-medium hover:text-blue-400 transition duration-200 px-3 py-2"
+            >Home</a
+          >
+          <a
+            href="./events.html"
+            class="font-medium text-blue-400 transition duration-200 px-3 py-2"
+            >Events</a
+          >
+          <a
+            href="./merchandise.html"
+            class="text-gray-900 font-medium hover:text-blue-400 transition duration-200 px-3 py-2"
+            >Merchandise</a
+          >
+          <!-- <a href="./login.html" class="bg-blue-600 hover:bg-blue-800 text-white font-medium px-4 py-2 rounded-lg shadow transition duration-200">SignUp</a> -->
+        </div>
+      </div>
+    </nav>
+
+<!-- Filters -->
+ <!-- Category Tabs -->
+<div class="flex justify-center gap-4 my-8">
+  <button data-filter="all" class="filter-btn px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium hover:bg-blue-600 hover:text-white transition">All</button>
+  <button data-filter="cultural" class="filter-btn px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium hover:bg-blue-600 hover:text-white transition">Cultural</button>
+  <button data-filter="hackathon" class="filter-btn px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium hover:bg-blue-600 hover:text-white transition">Hackathon</button>
+  <button data-filter="exhibition" class="filter-btn px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium hover:bg-blue-600 hover:text-white transition">Exhibition</button>
+  <button data-filter="sports" class="filter-btn px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium hover:bg-blue-600 hover:text-white transition">Sports</button>
+  <button data-filter="drama" class="filter-btn px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium hover:bg-blue-600 hover:text-white transition">Drama</button>
+  <button data-filter="technical" class="filter-btn px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium hover:bg-blue-600 hover:text-white transition">TechFest</button>
+</div>
+
+
+<!-- Input box -->
+ <div class="flex justify-center my-4">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search events..."
+    class="w-1/2 px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-md shadow-sm transition duration-200"
+  />
+</div>
+
+    <!-- Hero section -->
+<section class="bg-gradient-to-b from-white to-gray-100 py-14 px-5 md:px-16" id="upcomingEventsSection">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Upcoming Events</h2>
+
+  <div class="flex gap-6 overflow-x-auto scrollbar-hide pb-4" id="eventCardsContainer" data-filter="all">
+
+    <!-- Card 1 -->
+    <div class="event-card min-w-[280px] max-w-sm bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 group relative" data-filter="cultural">
+      <div class="overflow-hidden rounded-t-3xl">
+        <img src="../assets/images/event1.jpg" class="eventImage h-52 w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Event" />
+      </div>
+      <div class="p-5">
+        <span class="eventCategory inline-block px-3 py-1 bg-pink-100 text-pink-600 text-xs font-semibold rounded-full mb-2 category-btn">Cultural</span>
+        <h3 class="eventTitle text-xl font-semibold text-gray-800">✨ Cultural Night</h3>
+        <p class="eventDateLocation text-gray-500 text-sm mt-1">Aug 25 · Open Stage · ⏰ 6:00 PM</p>
+        <p class="eventDescription text-gray-600 mt-2 text-sm leading-relaxed">Join us for a magical evening of music, dance, and stage drama by talented students and special guests.</p>
+        <a href="./event-details.html"><button class="eventButton mt-4 w-full bg-blue-400 text-white py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition duration-300">Register Now</button></a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="event-card min-w-[280px] max-w-sm bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 group relative" data-filter="hackathon">
+      <div class="overflow-hidden rounded-t-3xl">
+        <img src="../assets/images/event2.jpg" class="eventImage h-52 w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Event" />
+      </div>
+      <div class="p-5">
+        <span class="eventCategory inline-block px-3 py-1 bg-yellow-100 text-yellow-600 text-xs font-semibold rounded-full mb-2 category-btn">Hackathon</span>
+        <h3 class="eventTitle text-xl font-semibold text-gray-800">💡 Ideathon 2K25</h3>
+        <p class="eventDateLocation text-gray-500 text-sm mt-1">Jun 10 · Innovation Cell · ⏰ 10:00 AM</p>
+        <p class="eventDescription text-gray-600 mt-2 text-sm leading-relaxed">Pitch your innovative ideas, win exciting prizes, and receive mentorship from industry leaders.</p>
+        <a href="./event-details.html"><button class="eventButton mt-4 w-full bg-blue-400 text-white py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition duration-300">Join Now</button></a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="event-card min-w-[280px] max-w-sm bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 group relative" data-filter="exhibition">
+      <div class="overflow-hidden rounded-t-3xl">
+        <img src="../assets/images/event3.jpg" class="eventImage h-52 w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Event" />
+      </div>
+      <div class="p-5">
+        <span class="eventCategory inline-block px-3 py-1 bg-green-100 text-green-600 text-xs font-semibold rounded-full mb-2 category-btn">Exhibition</span>
+        <h3 class="eventTitle text-xl font-semibold text-gray-800">🎨 Art & Craft Fair</h3>
+        <p class="eventDateLocation text-gray-500 text-sm mt-1">Sept 20 · Exhibition Hall · ⏰ 11:00 AM</p>
+        <p class="eventDescription text-gray-600 mt-2 text-sm leading-relaxed">Explore handmade art, crafts, and creative works made by our talented student artists and clubs.</p>
+        <a href="./event-details.html"><button class="eventButton mt-4 w-full bg-blue-400 text-white py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition duration-300">Explore</button></a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="event-card min-w-[280px] max-w-sm bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 group relative" data-filter="sports">
+      <div class="overflow-hidden rounded-t-3xl">
+        <img src="../assets/images/event4.jpg" class="eventImage h-52 w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Event" />
+      </div>
+      <div class="p-5">
+        <span class="eventCategory inline-block px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full mb-2 category-btn">Sports</span>
+        <h3 class="eventTitle text-xl font-semibold text-gray-800">🏆 Sports Week</h3>
+        <p class="eventDateLocation text-gray-500 text-sm mt-1">Sept 25 · Sports Complex · ⏰ 9:00 AM</p>
+        <p class="eventDescription text-gray-600 mt-2 text-sm leading-relaxed">Compete in football, cricket, volleyball and more! Exciting trophies and medals to be won!</p>
+        <a href="./event-details.html"><button class="eventButton mt-4 w-full bg-blue-400 text-white py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition duration-300">Get Pass</button></a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="event-card min-w-[280px] max-w-sm bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 group relative" data-filter="drama">
+      <div class="overflow-hidden rounded-t-3xl">
+        <img src="../assets/images/event5.jpg" class="eventImage h-52 w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Event" />
+      </div>
+      <div class="p-5">
+        <span class="eventCategory inline-block px-3 py-1 bg-purple-100 text-purple-600 text-xs font-semibold rounded-full mb-2 category-btn">Drama</span>
+        <h3 class="eventTitle text-xl font-semibold text-gray-800">🎭 Drama Fest 2K25</h3>
+        <p class="eventDateLocation text-gray-500 text-sm mt-1">Oct 5 · Main Auditorium · ⏰ 5:00 PM</p>
+        <p class="eventDescription text-gray-600 mt-2 text-sm leading-relaxed">Watch gripping performances, soul-touching plays, and mesmerizing stage by our dramatics club.</p>
+        <a href="./event-details.html"><button class="eventButton mt-4 w-full bg-blue-400 text-white py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition duration-300">Watch Live</button></a>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="event-card min-w-[280px] max-w-sm bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 group relative" data-filter="technical">
+      <div class="overflow-hidden rounded-t-3xl">
+        <img src="../assets/images/event6.jpeg" class="eventImage h-52 w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Event" />
+      </div>
+      <div class="p-5">
+        <span class="eventCategory inline-block px-3 py-1 bg-orange-100 text-orange-600 text-xs font-semibold rounded-full mb-2 category-btn">TechFest</span>
+        <h3 class="eventTitle text-xl font-semibold text-gray-800">⭐ Spectrum 2k25</h3>
+        <p class="eventDateLocation text-gray-500 text-sm mt-1">April 24 · ECE Block 1 · ⏰ 9:45 AM</p>
+        <p class="eventDescription text-gray-600 mt-2 text-sm leading-relaxed">Explore technical and non-technical events, quizzes, games, and grab exciting cash rewards!</p>
+        <a href="./event-details.html"><button class="eventButton mt-4 w-full bg-blue-400 text-white py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition duration-300">Register Now</button></a>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="event-card min-w-[280px] max-w-sm bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 group relative" data-filter="technical">
+      <div class="overflow-hidden rounded-t-3xl">
+        <img src="../assets/images/event7.jpg" class="eventImage h-52 w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Event" />
+      </div>
+      <div class="p-5">
+        <span class="eventCategory inline-block px-3 py-1 bg-orange-100 text-orange-600 text-xs font-semibold rounded-full mb-2 category-btn">TechFest</span>
+        <h3 class="eventTitle text-xl font-semibold text-gray-800">💻 Technovate 2k24</h3>
+        <p class="eventDateLocation text-gray-500 text-sm mt-1">16 25 · ECE Block 1 · ⏰ 11:30 AM</p>
+        <p class="eventDescription text-gray-600 mt-2 text-sm leading-relaxed">Join us for an exclusive tech & non-tech events showcase your skills by taking part!</p>
+        <a href="./event-details.html"><button class="eventButton mt-4 w-full bg-blue-400 text-white py-2 rounded-xl text-sm font-medium hover:bg-blue-700 transition duration-300">Register Now</button></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<p id="noResultMsg" class="text-center font-semibold text-2xl text-gray-500 mt-6 hidden">
+  No events found.
+</p>
+
+<!-- 🌟 Past Events Section -->
+<section class="bg-gray-100 py-16 px-4 md:px-20">
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Past Events</h2>
+  <p class="text-center text-gray-600 mb-10">A look back at our previous celebrations</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <!-- Past Event Card 1 -->
+    <div class="relative bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+      <img src="../assets/images/past-event1.jpg" alt="TechTalk 2023" class="w-full h-48 object-cover grayscale hover:grayscale-0 transition duration-300">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">TechTalk 2023</h3>
+        <p class="text-sm text-gray-500">📅 April 12, 2023</p>
+        <p class="mt-2 text-gray-600">A gathering of tech minds with innovative ideas.</p>
+        <button class="mt-4 text-blue-600 hover:underline">View Gallery →</button>
+      </div>
+      <span class="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full">Event Completed</span>
+    </div>
+
+    <!-- Past Event Card 2 -->
+    <div class="relative bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+      <img src="../assets/images/past-event2.jpg" alt="HackFest 2023" class="w-full h-48 object-cover grayscale hover:grayscale-0 transition duration-300">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">HackFest 2023</h3>
+        <p class="text-sm text-gray-500">📅 March 4, 2023</p>
+        <p class="mt-2 text-gray-600">An exciting 24hr coding battle for real-world problems.</p>
+        <button class="mt-4 text-blue-600 hover:underline">View Gallery →</button>
+      </div>
+      <span class="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full">Event Completed</span>
+    </div>
+
+    <!-- Past Event Card 3 -->
+    <div class="relative bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+      <img src="../assets/images/past-event3.jpg" alt="ArtVibe 2023" class="w-full h-48 object-cover grayscale hover:grayscale-0 transition duration-300">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">ArtVibe 2023</h3>
+        <p class="text-sm text-gray-500">📅 February 14, 2023</p>
+        <p class="mt-2 text-gray-600">A creative escape through colors, strokes & imagination.</p>
+        <button class="mt-4 text-blue-600 hover:underline">View Gallery →</button>
+      </div>
+      <span class="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full">Event Completed</span>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
+        <!-- Logo & About -->
+        <div>
+          <h2 class="text-white text-xl font-bold mb-3">CampusFest</h2>
+          <p class="text-sm">
+            Your one-stop hub for college events & exclusive merch. Stay updated
+            and join the celebration!
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-2">Quick Links</h3>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="./events.html" class="hover:text-white">Events</a></li>
+            <li>
+              <a href="./merchandise.html" class="hover:text-white"
+                >Merchandise</a
+              >
+            </li>
+            <li><a href="./about.html" class="hover:text-white">About</a></li>
+            <li><a href="./contact.html" class="hover:text-white">Contact</a></li>
+
+            <li><a href="./login.html" class="hover:text-white">Login</a></li>
+          </ul>
+        </div>
+
+        <!-- Useful for Students -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-2">For Students</h3>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:text-white">Upload Event</a></li>
+            <li><a href="#" class="hover:text-white">View Orders</a></li>
+            <li><a href="#" class="hover:text-white">Club Login</a></li>
+            <li><a href="#" class="hover:text-white">Help & Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Policies -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Policies</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Follow Us</h3>
+          <div class="flex space-x-4 text-lg">
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-4"
+      >
+        &copy; 2025 CampusFest. All rights reserved.
+      </div>
+    </footer>
+  
+<script src="../js/events.js"></script>
+</body>
+</html>
