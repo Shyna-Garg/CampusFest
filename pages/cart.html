@@ -40,26 +40,35 @@
     </div>
 
     <!-- 💳 Cart Summary -->
-    <div id="cart-summary" class="bg-white p-6 shadow-md rounded-lg space-y-4 h-fit">
-      <h2 class="text-xl font-semibold text-gray-800">Cart Summary</h2>
-      <div class="flex justify-between text-sm text-gray-600">
-        <span>Subtotal:</span>
-        <span>₹499</span>
-      </div>
-      <div class="flex justify-between text-sm text-gray-600">
-        <span>Delivery:</span>
-        <span>₹0</span>
-      </div>
-      <hr />
-      <div class="flex justify-between font-semibold text-lg text-gray-800">
-        <span>Total:</span>
-        <span>₹499</span>
-      </div>
-      <a href="./checkout.html"><button class="w-full bg-blue-600 hover:bg-blue-700 text-white mt-4 py-2 rounded-md font-semibold">
-        Proceed to Checkout
-      </button></a>
-    </div>
+   <div id="cart-summary" class="bg-white p-6 shadow-md rounded-lg space-y-4 h-fit">
+  <h2 class="text-xl font-semibold text-gray-800">Cart Summary</h2>
+
+  <div class="flex justify-between text-sm text-gray-600">
+    <span>Subtotal:</span>
+    <span id="subtotal">₹0</span>
   </div>
 
+  <div class="flex justify-between text-sm text-gray-600">
+    <span>Delivery:</span>
+    <span id="delivery">₹0</span>
+  </div>
+
+  <hr />
+
+  <div class="flex justify-between font-semibold text-lg text-gray-800">
+    <span>Total:</span>
+    <span id="total">₹0</span>
+  </div>
+
+  <a href="./checkout.html">
+    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white mt-4 py-2 rounded-md font-semibold">
+      Proceed to Checkout
+    </button>
+  </a>
+</div>
+
+
+  </div>
+  <script src="../js/cart.js"></script>
 </body>
 </html>

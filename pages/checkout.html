@@ -53,10 +53,10 @@
 
       <form id="checkout-form" class="space-y-4">
 
-        <input id="billing-name" type="text" placeholder="Full Name" class="w-full p-2 border rounded-md" required />
+        <input id="user-name" type="text" placeholder="Full Name" class="w-full p-2 border rounded-md" required />
         <input id="billing-email" type="email" placeholder="Email Address" class="w-full p-2 border rounded-md" required />
-        <input id="billing-phone" type="tel" placeholder="Phone Number" class="w-full p-2 border rounded-md" required />
-        <input id="billing-address" type="text" placeholder="Delivery Address" class="w-full p-2 border rounded-md" required />
+        <input id="user-phone" type="tel" placeholder="Phone Number" class="w-full p-2 border rounded-md" required />
+        <input id="user-address" type="text" placeholder="Delivery Address" class="w-full p-2 border rounded-md" required />
         <div class="flex gap-4">
           <input id="billing-city" type="text" placeholder="City" class="w-full p-2 border rounded-md" required />
           <input id="billing-pincode" type="text" placeholder="Pincode" class="w-full p-2 border rounded-md" required />
@@ -81,13 +81,14 @@
         </div>
 
         <!-- Submit Button -->
-        <a href="./my-orders.html"><button id="confirm-order" type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">
+        <button id="confirm-order" type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">
           Confirm Order
-        </button></a>
+        </button>
 
       </form>
     </div>
 
   </div>
+  <script src="../js/checkout.js"></script>
 </body>
 </html>
